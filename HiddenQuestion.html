@@ -86,6 +86,11 @@
             border-radius: 10px;
         }
 
+        .gif-containerdummy {
+            display: none;
+            margin-top: 20px;
+        }
+
         @keyframes fall {
             0% {
                 transform: translateX(0) translateY(0);
@@ -137,8 +142,8 @@
     <div class="container">
         <p class="question">Can I ask you a question?</p>
 
-        <div class="gif-container">
-            <img id="gifImage" src="https://www.example.com/dummy-gif.gif" alt="Placeholder GIF" width="300" />
+        <div class="gif-containerdummy" id="gif-container">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExanRxZmJ6bjJ2eWNwdzl6YWptNnpndHJuMXg3NWRnb2d6YnF3a2lrYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tMqK6aXiwushxQUeMz/giphy.gif" alt="Placeholder GIF" width="300">
         </div>
         
         <button class="heart-button" onclick="showQuestion()">Click Me</button>
