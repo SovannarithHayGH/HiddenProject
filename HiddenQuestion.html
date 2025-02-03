@@ -87,7 +87,7 @@
         }
 
         .gif-containerdummy {
-            display: none;
+            display: block;
             margin-top: 20px;
         }
 
@@ -145,6 +145,7 @@
 <body>
 
     <div class="container">
+        <!-- Placeholder Dummy GIF initially visible -->
         <div class="gif-containerdummy" id="gif-containerdummy">
             <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExanRxZmJ6bjJ2eWNwdzl6YWptNnpndHJuMXg3NWRnb2d6YnF3a2lrYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tMqK6aXiwushxQUeMz/giphy.gif" alt="Placeholder GIF" width="300">
         </div>
@@ -181,11 +182,14 @@
 
     <script>
         function showQuestion() {
+            // Hide the dummy GIF and show the real one
+            document.getElementById('gif-containerdummy').style.display = 'none';  // Hide the dummy GIF
+            document.getElementById('gif-container').style.display = 'block'; // Show the real GIF
+            
+            // Hide the "Click Me" button and show the message and response buttons
             document.querySelector(".heart-button").style.display = "none";
             document.querySelector(".message").style.display = "block";
-            document.querySelector(".gif-container").style.display = "block";
             document.querySelector(".response-buttons").style.display = "flex";
-            startHearts();
         }
 
         function submitYes() {
