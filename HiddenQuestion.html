@@ -91,6 +91,11 @@
             margin-top: 20px;
         }
 
+        .gif-containerdummy img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
         @keyframes fall {
             0% {
                 transform: translateX(0) translateY(0);
@@ -140,11 +145,13 @@
 <body>
 
     <div class="container">
-        <p class="question">Can I ask you a question?</p>
-
-        <div class="gif-container" id="gif-containerdummy">
+        <div class="gif-containerdummy" id="gif-containerdummy">
             <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExanRxZmJ6bjJ2eWNwdzl6YWptNnpndHJuMXg3NWRnb2d6YnF3a2lrYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tMqK6aXiwushxQUeMz/giphy.gif" alt="Placeholder GIF" width="300">
         </div>
+        
+        <p class="question">Can I ask you a question?</p>
+
+        
         
         <button class="heart-button" onclick="showQuestion()">Click Me</button>
         <div class="message">Em có muốn trở thành valentine của đời anh không? 💙</div>
